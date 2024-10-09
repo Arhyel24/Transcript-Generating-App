@@ -42,10 +42,19 @@ The Transcript Generating App performs the following functions:
 ## Program Output
 
 The generated transcript follows this format:
+```Transcript for [Student Name] - [Student ID] - [Department] Level [Level]```
+```Session: 2022/2023```
 
-``Transcript for [Student Name] - [Student ID] - [Department] Level [Level] Session: 2022/2023
+```Semester 1:```
+```[Course Code] - [Course Name] - [Credit Unit] - [Grade]```
+...
 
-Semester 1: [Course Code] - [Course Name] - [Credit Unit] - [Grade] ... Semester 2: [Course Code] - [Course Name] - [Credit Unit] - [Grade] ... CGPA: [CGPA]``
+```Semester 2:```
+```[Course Code] - [Course Name] - [Credit Unit] - [Grade]```
+...
+
+```CGPA: [CGPA]```
+
 
 ## Algorithm
 
