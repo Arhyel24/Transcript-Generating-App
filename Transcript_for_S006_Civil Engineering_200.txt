@@ -1,0 +1,28 @@
+Student ID: S006
+Name: Emily Chen
+Department: Civil Engineering
+Level: 200
+
+  1st Semester Courses:
+	Course			Units		Grade
+	Math 101		3		F
+	English 101		2		E
+	Computer 101		4		D
+	History 101		1		F
+	Biology 101		4		B
+		Total Credits: 14
+1st Semester Grades Count: 0 A's, 1 B's, 0 C's, 1 D's, 1 E's, and 2 F's.
+
+  2nd Semester Courses:
+	Course			Units		Grade
+	Math 102		3		C
+	English 102		3		D
+	Computer 102		2		B
+	History 102		3		D
+	Biology 102		4		E
+		Total Units: 15
+2nd Semester Grades Count: 0 A's, 1 B's, 1 C's, 2 D's, 1 E's, and 0 F's.
+  CGPA: 1.83
+  Credits: 29
+  Grade Points: 53.00
+
