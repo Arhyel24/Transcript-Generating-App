@@ -191,6 +191,7 @@ void addStudentManually(Student students[], int& studentCount, Course courses[])
             students[studentCount].semester1[j].credits = courses[j].credits;
             students[studentCount].semester1[j].grade = grade;
 
+
             cout << "Enter grade for " << courses[j + 5].name << ": ";
             cin >> grade;
             students[studentCount].semester2[j].name = courses[j + 5].name;
