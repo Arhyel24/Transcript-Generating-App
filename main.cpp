@@ -9,6 +9,7 @@
 #include <iomanip>
 #include <cstdlib>
 #include <iterator>
+#include <typeinfo>
 #include <direct.h>
 #include <ctime>
 #include <unistd.h>
@@ -21,6 +22,10 @@ struct Course {
     int credits;
     double mark;
     char grade;
+};
+
+struct studentID {
+    string id;
 };
 
 class Student {
@@ -146,8 +151,8 @@ void generateTranscript(Student student){
         int firstSemesterCredits = 0;
         int secondSemesterCredits = 0;
         
-    	double ugp1 = 0;
-    	double ugp2 = 0;
+    	double ugp1;
+    	double ugp2;
         for (int j = 0; j < 13; j++) {
 	        int units = student.semester1[j].credits;
 	        
@@ -255,7 +260,7 @@ void generateTranscript(Student student){
 
 void getAllStudents(vector<Student> students) {
     cout << "You have the following students: \n";
-    int columns = 4;
+    int columns = 5;
     int rows = (students.size() + columns - 1) / columns; // Calculate the number of rows needed
 
     int count = 1; // Initialize a counter to number the students
@@ -515,7 +520,7 @@ int main() {
     };
     
     cout << "Welcome to the Transcript Generator!" << endl;
-    cout << "-----------------------------------------------------------" << endl;
+    cout << "--------------------------------------" << endl;
     cout << "Your go-to solution for professional results in seconds!\n" << endl;
 	
     vector<Student> students;
@@ -524,7 +529,6 @@ int main() {
     	int studentCount = students.size();
     	
     	if (studentCount == 0) {
-    		cout << "-------------------------------------------------------------------" << endl;
 		    cout << "No students in the database. Please add entries or use demo data.\n" << endl;
 		}
     	
@@ -550,10 +554,6 @@ int main() {
             	int numberOfStudents;
             	cout << "Enter the number of students you want to add (1-10): ";
             	numberOfStudents = getSanitizedInt();
-            	if (numberOfStudents > 10 ) {
-            		cout << "Error, please enter not more than 10!\n";
-            		break;
-				}
                 populateStudents(students, demoStudents, courses, numberOfStudents);
                 break;
             case 3:
