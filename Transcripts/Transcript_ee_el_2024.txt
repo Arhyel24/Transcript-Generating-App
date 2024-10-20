@@ -1,0 +1,53 @@
+
+				     UNIVERSITY OF MAIDUGURI 
+				    (FACULTY OF ENGINEERING) 
+				DEPARTMENT OF COMPUTER ENGINEERING
+
+Name: ee							Sex: ee
+Student ID: ee						State: ee
+Session: ee							Nationality: ee
+
+Part 2: 1st Semester:
+Course Code	Course Title			  Score	Units	Grade	(GP)	(U.GP)	Remark
+CPE 201   Introduction to Computer Engineering     3	 2	 F	 0.00	 0.00	 Fail
+CPE 203   Computer Programming I                   3	 2	 F	 0.00	 0.00	 Fail
+CPE 205   Computer Programming I Laboratory        3	 1	 F	 0.00	 0.00	 Fail
+EEE 201   Basic Electrical Engineering II          3	 2	 F	 0.00	 0.00	 Fail
+MEE 201   Engineering Drawing II                   3	 1	 F	 0.00	 0.00	 Fail
+MEE 203   Workshop Practice I                      3	 1	 F	 0.00	 0.00	 Fail
+MEE 205   Engineering Mechanics I                  3	 2	 F	 0.00	 0.00	 Fail
+MEE 207   Materials Science                        3	 2	 F	 0.00	 0.00	 Fail
+MTH 211   Mathematical Methods I                   3	 3	 F	 0.00	 0.00	 Fail
+STT 206   Basic Statistics I                       3	 3	 F	 0.00	 0.00	 Fail
+GST 221   History and Philosophy of Science        3	 2	 F	 0.00	 0.00	 Fail
+GST 211   Communication in English                 3	 2	 F	 0.00	 0.00	 Fail
+GST 231   Introductory to Entrepreneurial Skills   3	 2	 F	 0.00	 0.00	 Fail
+	  Total: 					25			 3.68234e-317.00
+
+Part 2: 2nd Semester::
+Course Code	Course Title			  Score	Units	Grade	(GP)	(U.GP)	Remark
+EEE 202   Introduction to Computer Engineering     3	 2	 F	 0.00	 0.00	 Fail
+CWE 206   Computer Programming I                   3	 3	 F	 0.00	 0.00	 Fail
+MEE 202   Computer Programming I Laboratory        3	 1	 F	 0.00	 0.00	 Fail
+MEE 206   Basic Electrical Engineering II          3	 2	 F	 0.00	 0.00	 Fail
+MEE 208   Engineering Drawing II                   3	 2	 F	 0.00	 0.00	 Fail
+MEE 210   Workshop Practice I                      3	 2	 F	 0.00	 0.00	 Fail
+CPE 202   Engineering Mechanics I                  3	 2	 F	 0.00	 0.00	 Fail
+CPE 204   Materials Science                        3	 2	 F	 0.00	 0.00	 Fail
+CPE 206   Mathematical Methods I                   3	 1	 F	 0.00	 0.00	 Fail
+MTH 212   Basic Statistics I                       3	 3	 F	 0.00	 0.00	 Fail
+GST 212   History and Philosophy of Science        3	 2	 F	 0.00	 0.00	 Fail
+GST 224   Communication in English                 3	 2	 F	 0.00	 0.00	 Fail
+FEE 290   Introductory to Entrepreneurial Skills   3	 2	 F	 0.00	 0.00	 Fail
+	  Total: 					26			 3.69067e-317.00
+
+ SUMMARY OF RESULT:
+  Cummulative Units: 			51
+  Cummulative Product: 			7.37301e-317
+  Cummulative Grade Point Average: 	0.00
+
+ Grades Count:
+   Semester	A's	B's	C's	D's	E's	F's
+   First:	 0	 0	 0	 0	 0	 13
+   Second:	 0	 0	 0	 0	 0	 13
+

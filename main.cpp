@@ -3,6 +3,7 @@
 #include <sstream>
 #include <fstream>
 #include <string>
+#include <limits>
 #include <algorithm>
 #include <vector>
 #include <iomanip>
@@ -10,10 +11,9 @@
 #include <iterator>
 #include <direct.h>
 #include <ctime>
-
 #include <unistd.h>
-using namespace std;
 
+using namespace std;
 
 struct Course {
     string name;
@@ -21,10 +21,6 @@ struct Course {
     int credits;
     double mark;
     char grade;
-};
-
-struct studentID {
-    string id;
 };
 
 class Student {
@@ -38,14 +34,26 @@ public:
     string state;
     string nationality;
 
-    Course semester1[13]; // array of 5 courses for 1st semester
-    Course semester2[13]; // array of 5 courses for 2nd semester
+    Course semester1[13]; // array of 13 courses for 1st semester
+    Course semester2[13]; // array of 13 courses for 2nd semester
 
     // constructor to initialize the Student object
     Student(string i, string n, string d, string l, string m, string k, string p, string h) : id(i), name(n), department(d), level(l), session(m), sex(k), state(p), nationality(h) {}
-
-    // add more member functions as needed (e.g., getters, setters, etc.)
 };
+
+int getSanitizedInt() {
+	int choice;
+	cin >> choice;
+    
+    while (cin.fail()) {
+        cin.clear();
+		cin.ignore(numeric_limits<std::streamsize>::max(), '\n');
+        cout << "Invalid input, please enter a valid integer" << endl;
+        cout << "Enter your choice: ";
+        cin >> choice;
+	}
+	return choice;
+}
 
 char assignGrade(int score) {
   if (score >= 70) {
@@ -99,7 +107,6 @@ void populateStudents(vector<Student>& students, Student demoStudents[], Course 
     for (int i = 0; i < arraySize; i++) {
         Student newStudent = demoStudents[i];
         
-
         // Assign predefined courses to each student
         for (int j = 0; j < 13; j++) {
             int mark1 = rand() % (75 - 35 + 1) + 35;
@@ -139,8 +146,8 @@ void generateTranscript(Student student){
         int firstSemesterCredits = 0;
         int secondSemesterCredits = 0;
         
-    	double ugp1;
-    	int ugp2;
+    	double ugp1 = 0;
+    	double ugp2 = 0;
         for (int j = 0; j < 13; j++) {
 	        int units = student.semester1[j].credits;
 	        
@@ -248,7 +255,7 @@ void generateTranscript(Student student){
 
 void getAllStudents(vector<Student> students) {
     cout << "You have the following students: \n";
-    int columns = 5;
+    int columns = 4;
     int rows = (students.size() + columns - 1) / columns; // Calculate the number of rows needed
 
     int count = 1; // Initialize a counter to number the students
@@ -288,7 +295,7 @@ void generateTranscriptFile(Student student, string filename) {
         int secondSemesterCredits = 0;
         
     	double ugp1;
-    	int ugp2;
+    	double ugp2;
         for (int j = 0; j < 13; j++) {
 	        int units = student.semester1[j].credits;
 	        
@@ -413,7 +420,7 @@ void addStudentManually(vector<Student>& students, Course courses[]) {
     string level;
     cin >> level;
     
-     cout << "Enter student sex: ";
+    cout << "Enter student sex: ";
     string sex;
     cin >> sex;
 
@@ -428,14 +435,15 @@ void addStudentManually(vector<Student>& students, Course courses[]) {
     cout << "Enter student nationality: ";
     string nationality;
     cin >> nationality;
-
-    Student newStudent(id, cname, department, level, session, sex, state, nationality); // create a new Student object with the required arguments
+    
+	// create a new Student object with the required arguments
+    Student newStudent(id, cname, department, level, session, sex, state, nationality); 
 
     // Assign grades for each course
     for (int j = 0; j < 13; j++) {
         cout << "Enter score for " << courses[j].name << ": ";
         int score;
-        cin >> score;
+        score = getSanitizedInt();
 
         Course semester1Course;
         semester1Course.name = courses[j].name;
@@ -446,7 +454,7 @@ void addStudentManually(vector<Student>& students, Course courses[]) {
         newStudent.semester1[j] = semester1Course;
 
         cout << "Enter score for " << courses[j + 13].name << ": ";
-        cin >> score;
+        score = getSanitizedInt();
 
         Course semester2Course;
         semester2Course.name = courses[j + 13].name;
@@ -456,11 +464,11 @@ void addStudentManually(vector<Student>& students, Course courses[]) {
         semester2Course.grade = assignGrade(score);
         newStudent.semester2[j] = semester2Course;
     }
-
-    students.push_back(newStudent); // add the new Student object to the vector
+	
+	// add the new Student object to the database
+    students.push_back(newStudent); 
     cout << "Student added successfully!" << endl;
 }
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main() {
 	
@@ -507,7 +515,7 @@ int main() {
     };
     
     cout << "Welcome to the Transcript Generator!" << endl;
-    cout << "--------------------------------------" << endl;
+    cout << "-----------------------------------------------------------" << endl;
     cout << "Your go-to solution for professional results in seconds!\n" << endl;
 	
     vector<Student> students;
@@ -516,6 +524,7 @@ int main() {
     	int studentCount = students.size();
     	
     	if (studentCount == 0) {
+    		cout << "-------------------------------------------------------------------" << endl;
 		    cout << "No students in the database. Please add entries or use demo data.\n" << endl;
 		}
     	
@@ -528,9 +537,10 @@ int main() {
         cout << "4. View all students" << endl;
         cout << "5. Exit" << endl;
         cout << endl;
-        cout << "Enter your choice: ";
+        cout << "Enter your choice (1-5): ";
         int choice;
-        cin >> choice;
+        choice = getSanitizedInt();
+			
 
         switch (choice) {
             case 1:
@@ -538,24 +548,29 @@ int main() {
                 break;
             case 2:
             	int numberOfStudents;
-            	cout << "Enter the number of students you want to add: ";
-            	cin >> numberOfStudents;
+            	cout << "Enter the number of students you want to add (1-10): ";
+            	numberOfStudents = getSanitizedInt();
+            	if (numberOfStudents > 10 ) {
+            		cout << "Error, please enter not more than 10!\n";
+            		break;
+				}
                 populateStudents(students, demoStudents, courses, numberOfStudents);
                 break;
             case 3:
                 if (studentCount > 0) {
                     cout << "Enter the student number (1-" << studentCount << "): ";
                     int studentNumber;
-                    cin >> studentNumber;
+                    studentNumber = getSanitizedInt();
                     if (studentNumber >= 1 && studentNumber <= studentCount) {
-                    	int arraySize = 10;
 						cout << "Generating... \n";
 						
 					    usleep(900000);
 					    
-                        generateTranscript(students[studentNumber - 1]);
                         
                         Student student = students[studentNumber - 1];
+                        
+                        generateTranscript(student);
+                        
                         string filename;
                         
                         time_t now = time(0);
@@ -564,7 +579,6 @@ int main() {
 						
 						string str = student.id;
 					    replace(str.begin(), str.end(), '/', '_');
-//					    cout << str << endl;
 						
 						string outputDir = "Transcripts";
 						
@@ -617,7 +631,7 @@ int main() {
     			cout << "Thank you for using the Transcript Generator. We hope it enhances your academic experience!" << endl;
             	return 0;
             default:
-                cout << "Invalid choice. Please try again." << endl;
+                cout << "Invalid choice. Please try again (1-5)." << endl;
         }
     }
 

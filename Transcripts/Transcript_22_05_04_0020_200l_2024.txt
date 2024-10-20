@@ -1,0 +1,53 @@
+
+				     UNIVERSITY OF MAIDUGURI 
+				    (FACULTY OF ENGINEERING) 
+				DEPARTMENT OF COMPUTER ENGINEERING
+
+Name: John Doe							Sex: Male
+Student ID: 22/05/04/0020						State: Ogun
+Session: 2023/2024							Nationality: Nigerian
+
+Part 2: 1st Semester:
+Course Code	Course Title			  Score	Units	Grade	(GP)	(U.GP)	Remark
+CPE 201   Introduction to Computer Engineering     37	 2	 E	 1.00	 2.00	 Pass
+CPE 203   Computer Programming I                   52	 2	 C	 3.00	 6.00	 Pass
+CPE 205   Computer Programming I Laboratory        70	 1	 A	 5.00	 5.00	 Pass
+EEE 201   Basic Electrical Engineering II          63	 2	 B	 4.00	 8.00	 Pass
+MEE 201   Engineering Drawing II                   62	 1	 B	 4.00	 4.00	 Pass
+MEE 203   Workshop Practice I                      50	 1	 C	 3.00	 3.00	 Pass
+MEE 205   Engineering Mechanics I                  71	 2	 A	 5.00	 10.00	 Pass
+MEE 207   Materials Science                        55	 2	 C	 3.00	 6.00	 Pass
+MTH 211   Mathematical Methods I                   41	 3	 D	 2.00	 6.00	 Pass
+STT 206   Basic Statistics I                       63	 3	 B	 4.00	 12.00	 Pass
+GST 221   History and Philosophy of Science        65	 2	 B	 4.00	 8.00	 Pass
+GST 211   Communication in English                 54	 2	 C	 3.00	 6.00	 Pass
+GST 231   Introductory to Entrepreneurial Skills   36	 2	 E	 1.00	 2.00	 Pass
+	  Total: 					25			 78.00
+
+Part 2: 2nd Semester::
+Course Code	Course Title			  Score	Units	Grade	(GP)	(U.GP)	Remark
+EEE 202   Sc. of Elect. and Elect. Eng. Materials  63	 2	 B	 4.00	 8.00	 Pass
+CWE 206   Strength of Materials 1                  69	 3	 B	 4.00	 12.00	 Pass
+MEE 202   Engineering Drawing III                  62	 1	 B	 4.00	 4.00	 Pass
+MEE 206   Engineering Mechanics II                 63	 2	 B	 4.00	 8.00	 Pass
+MEE 208   Thermodynamics 1                         61	 2	 B	 4.00	 8.00	 Pass
+MEE 210   Fluid Mechanics 1                        44	 2	 D	 2.00	 4.00	 Pass
+CPE 202   Algorithms and Data Structures           61	 2	 B	 4.00	 8.00	 Pass
+CPE 204   Computer Programming II                  55	 2	 C	 3.00	 6.00	 Pass
+CPE 206   Computer Programming Laboratory II       72	 1	 A	 5.00	 5.00	 Pass
+MTH 212   Mathematical Methods II                  58	 3	 C	 3.00	 9.00	 Pass
+GST 212   Philosophy and Human Existence           61	 2	 B	 4.00	 8.00	 Pass
+GST 224   Peace Studies and Conflict Resolution    51	 2	 C	 3.00	 6.00	 Pass
+FEE 290   In-House Industrial Training             48	 2	 D	 2.00	 4.00	 Pass
+	  Total: 					26			 90.00
+
+ SUMMARY OF RESULT:
+  Cummulative Units: 			51
+  Cummulative Product: 			168
+  Cummulative Grade Point Average: 	3.29
+
+ Grades Count:
+   Semester	A's	B's	C's	D's	E's	F's
+   First:	 2	 4	 4	 1	 2	 0
+   Second:	 1	 7	 3	 2	 0	 0
+

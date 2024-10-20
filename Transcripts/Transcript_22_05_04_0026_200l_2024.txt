@@ -1,0 +1,53 @@
+
+				     UNIVERSITY OF MAIDUGURI 
+				    (FACULTY OF ENGINEERING) 
+				DEPARTMENT OF COMPUTER ENGINEERING
+
+Name: My							Sex: M
+Student ID: 22/05/04/0026						State: borno
+Session: 2022/2023							Nationality: nigerian
+
+Part 2: 1st Semester:
+Course Code	Course Title			  Score	Units	Grade	(GP)	(U.GP)	Remark
+CPE 201   Introduction to Computer Engineering     23	 2	 F	 0.00	 0.00	 Fail
+CPE 203   Computer Programming I                   66	 2	 B	 4.00	 8.00	 Pass
+CPE 205   Computer Programming I Laboratory        67	 1	 B	 4.00	 4.00	 Pass
+EEE 201   Basic Electrical Engineering II          44	 2	 D	 2.00	 4.00	 Pass
+MEE 201   Engineering Drawing II                   66	 1	 B	 4.00	 4.00	 Pass
+MEE 203   Workshop Practice I                      66	 1	 B	 4.00	 4.00	 Pass
+MEE 205   Engineering Mechanics I                  77	 2	 A	 5.00	 10.00	 Pass
+MEE 207   Materials Science                        44	 2	 D	 2.00	 4.00	 Pass
+MTH 211   Mathematical Methods I                   66	 3	 B	 4.00	 12.00	 Pass
+STT 206   Basic Statistics I                       66	 3	 B	 4.00	 12.00	 Pass
+GST 221   History and Philosophy of Science        55	 2	 C	 3.00	 6.00	 Pass
+GST 211   Communication in English                 56	 2	 C	 3.00	 6.00	 Pass
+GST 231   Introductory to Entrepreneurial Skills   56	 2	 C	 3.00	 6.00	 Pass
+	  Total: 					25			 80.00
+
+Part 2: 2nd Semester::
+Course Code	Course Title			  Score	Units	Grade	(GP)	(U.GP)	Remark
+EEE 202   Introduction to Computer Engineering     26	 2	 F	 0.00	 0.00	 Fail
+CWE 206   Computer Programming I                   56	 3	 C	 3.00	 9.00	 Pass
+MEE 202   Computer Programming I Laboratory        67	 1	 B	 4.00	 4.00	 Pass
+MEE 206   Basic Electrical Engineering II          55	 2	 C	 3.00	 6.00	 Pass
+MEE 208   Engineering Drawing II                   77	 2	 A	 5.00	 10.00	 Pass
+MEE 210   Workshop Practice I                      44	 2	 D	 2.00	 4.00	 Pass
+CPE 202   Engineering Mechanics I                  96	 2	 A	 5.00	 10.00	 Pass
+CPE 204   Materials Science                        65	 2	 B	 4.00	 8.00	 Pass
+CPE 206   Mathematical Methods I                   45	 1	 D	 2.00	 2.00	 Pass
+MTH 212   Basic Statistics I                       76	 3	 A	 5.00	 15.00	 Pass
+GST 212   History and Philosophy of Science        56	 2	 C	 3.00	 6.00	 Pass
+GST 224   Communication in English                 56	 2	 C	 3.00	 6.00	 Pass
+FEE 290   Introductory to Entrepreneurial Skills   56	 2	 C	 3.00	 6.00	 Pass
+	  Total: 					26			 86.00
+
+ SUMMARY OF RESULT:
+  Cummulative Units: 			51
+  Cummulative Product: 			166
+  Cummulative Grade Point Average: 	3.25
+
+ Grades Count:
+   Semester	A's	B's	C's	D's	E's	F's
+   First:	 1	 6	 3	 2	 0	 1
+   Second:	 3	 2	 5	 2	 0	 1
+
